@@ -46,9 +46,9 @@ setup_flathub() {
 }
 
 setup_vanilla_gnome() {
-    apt install gnome-session fonts-cantarell adwaita-icon-theme-full gnome-backgrounds gnome-tweaks qgnomeplatform-qt5 -y
+    apt install gnome-session fonts-cantarell adwaita-icon-theme-full gnome-backgrounds gnome-tweaks qgnomeplatform-qt5 kgx -y
     update-alternatives --set gdm-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
-    apt remove ubuntu-session kgx -y
+    apt remove ubuntu-session -y
 }
 
 install_adwgtk3() {
