@@ -48,7 +48,7 @@ setup_flathub() {
 setup_vanilla_gnome() {
     apt install gnome-session fonts-cantarell adwaita-icon-theme-full gnome-backgrounds gnome-tweaks qgnomeplatform-qt5 -y
     update-alternatives --set gdm-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
-    apt remove ubuntu-session -y
+    apt remove ubuntu-session kgx -y
 }
 
 install_adwgtk3() {
@@ -73,6 +73,8 @@ install_icons() {
 
 restore_firefox() {
     flatpak install -y app/org.mozilla.firefox/x86_64/stable
+    flatpak install -y app/com.brave.Browser/x86_64/stable
+	flatpak install -y app/org.chromium.Chromium/x86_64/stable
 }
 
 ask_reboot() {
